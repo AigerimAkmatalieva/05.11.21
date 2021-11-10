@@ -1,0 +1,83 @@
+.important::before {
+  content: "!";
+}
+.important::after {
+content: "!";
+}
+.slash::before {
+  content: "/";
+}
+.slash::after {
+content: "/";
+}
+.plus::before {
+  content: "+";
+}
+.plus::after {
+content: "+";
+}
+.tilde::before {
+  content: "~";
+}
+.tilde::after {
+content: "~";
+}
+.hash::before {
+  content: "#";
+}
+.hash::after {
+content: "#";
+}
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  visibility: hidden;
+  position: absolute;
+
+  width: 120px;
+
+  top: 100%;
+  left: 0;
+  margin-left: -60px;
+
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  padding: 5px;
+}
+[data-tooltip]:hover::after{
+visibility: visible;
+}
+.navbar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: stretch;
+ }
+ .navbar a {
+   color: blue;
+   display: inline-block;
+   text-decoration: none;
+ }
+ table {
+   width: 100%;
+ }
+ table tr th {
+   background-color: blue;
+ }
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: red;
+}
